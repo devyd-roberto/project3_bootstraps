@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pug Community</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top">
+
+        <div class="container">
+            <a href="#" class="navbar-brand">Pug Community</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#section1" class="nav-link" >Guias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section2" class="nav-link" >Saúde Animal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section3" class="nav-link" >Perguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section4" class="nav-link" >Instrutores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Show Case-->
+    <section class="bg-light text-dark p-5 text-center text-sm-start  ">
+        <div class="container">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="d-sm-flex align-items-center justify-content-between">
+                            <div>
+                                <h1>Conheça o Encanto dos  <span class="text-success">Pugs!</span> </h1>
+                                <p class="lead my-4">
+                                    Descubra tudo sobre a raça pug, desde sua personalidade única até suas necessidades de cuidados especiais. Explore agora!
+                                </p>
+                                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                                    Comece Agora
+                                </button>
+                            </div>
+                            
+                                <img id="img-logo" class="img-fluid w-50 d-none d-sm-block" src="img/vecteezy_design-de-impressao-de-camiseta-de-vetor-de-pug-fofo_12955444.svg" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="d-sm-flex align-items-center justify-content-between">
+                            <div>
+                                <h1>Cuide do Seu Melhor  <span class="text-warning">Aumigo</span> </h1>
+                                <p class="lead my-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio vero debitis molestias, ratione asperiores in eaque qui cupiditate nesciunt quidem blanditiis quibusdam pariatur? Numquam dolore tempore dolorum voluptatibus temporibus.
+                                </p>
+                                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                                    Comece Agora
+                                </button>
+                            </div>
+                            
+                                <img id="img-logo" class="img-fluid w-50 d-none d-sm-block opacity-50"  src="img/vecteezy_cute-pug-dog-cartoon-vector-illustration_14401046.jpg" alt="">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="d-sm-flex align-items-center justify-content-between">
+                            <div>
+                                <h1>Faça Parte da Nossa Comunidade!<span class="text-success">Pug Community</span> </h1>
+                                <p class="lead my-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio vero debitis molestias, ratione asperiores in eaque qui cupiditate nesciunt quidem blanditiis quibusdam pariatur? Numquam dolore tempore dolorum voluptatibus temporibus.
+                                </p>
+                                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                                    Comece Agora
+                                </button>
+                            </div>
+                            
+                                <img id="img-logo" class="img-fluid w-50 d-none d-sm-block" src="img/17544141_2003.i109.018_stay_at_home_isometric_set-16.svg" alt="">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+           
+            <button data-bs-target="#carouselExample" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon darken-icon" ></span>
+            </button>
+            <button data-bs-target="#carouselExample" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon darken-icon" ></span>
+            </button>
+
+        </div>
+        
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enroll" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enroll">Preencha o Formulário</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+        <div class="modal-body">
+            <p class="lead">
+                Cadastre e faça parte da comunidade!
+            </p>
+            <form>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        Primeiro Nome:
+                    </label>
+                    <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="mb-3">
+                    <label for="last-name-name" class="col-form-label">
+                        Primeiro Nome:
+                    </label>
+                    <input type="text" class="form-control" id="last-name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="col-form-label">
+                        Primeiro Nome:
+                    </label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="col-form-label">
+                        Telefone:
+                    </label>
+                    <input type="tel" class="form-control" id="phone">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Cadastre-se</button>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Boxes-->
+    <section id="section1" class="p-5">
+        <div class="container">
+            <div class="row text-center g-4 sm-g3">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h3 class="card-tittle mb-3">
+                                Cuidados Diários 
+                            </h3>
+                            <p class="card-text">
+                                Descubra as rotinas diárias essenciais para manter seu pug saudável e feliz. Desde alimentação adequada até exercícios regulares, nós temos todas as dicas.
+                            </p>
+                            <a href="#" class="btn btn-success">Leia Mais</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <h3 class="card-tittle mb-3">
+                                Saúde Animal 
+                            </h3>
+                            <p class="card-text">
+                                Faça parte de uma comunidade apaixonada por pugs! Conecte-se com outros amantes de pugs, compartilhe experiências e receba suporte e conselhos.
+                            </p>
+                            <a href="#" class="btn btn-success">Leia Mais</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-square-dots"></i>
+                            </div>
+                            <h3 class="card-tittle mb-3">
+                                Nossa Comunidade     
+                            </h3>
+                            <p class="card-text">
+                                Saiba como prevenir problemas de saúde comuns em pugs. Desde problemas respiratórios até alergias de pele, descubra como proteger seu amigo peludo.
+                            </p>
+                            <a href="#" class="btn btn-success">Leia Mais</a>
+                        </div>
+                    </div>
+                    
+                </div> 
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Aprenda-->
+    <section id="section2" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col md">
+                    <img id="img-aprenda" src="./img/pug-saude.png" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Saúde do Pug: </h2>
+                    <p class="lead">
+                        Cuidando do Seu Melhor Amigo Peludo
+                    </p>
+                    <p>
+                        Os pugs requerem cuidados específicos devido à sua conformação facial achatada, que pode levar a problemas respiratórios. Manter um peso saudável, evitar exercícios extenuantes e usar coleiras confortáveis são importantes. Uma dieta equilibrada, cuidados com a pele e atenção à saúde ocular são fundamentais para prevenir problemas. Vacinação regular e visitas ao veterinário ajudam a garantir uma vida longa e saudável para o seu pug.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Accodion-->
+    <section id="section3" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Perguntas Frequentes
+            </h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--Item 1-->
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" >
+                        Por que os pugs roncam tanto?
+                    </button>
+                </h2>
+                <div id="questionOne" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Os pugs têm um formato facial único, com narinas mais estreitas e uma traqueia sensível, o que pode resultar em dificuldade respiratória e ronco. Esse fenômeno é conhecido como Síndrome Braquicefálica, comum em raças de cães com focinho achatado, como os pugs.</div>
+                </div>
+                </div>
+                <!--Item 2-->
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" >
+                        Os pugs são propensos a problemas de saúde?
+                    </button>
+                </h2>
+                <div id="questionTwo" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Sim, os pugs são propensos a certos problemas de saúde devido à sua conformação física. Alguns dos problemas mais comuns incluem problemas respiratórios, problemas de pele, como dermatite dobrável, e problemas oculares, como olhos secos. É essencial que os proprietários estejam cientes desses problemas e forneçam cuidados adequados e exames veterinários regulares.</div>
+                </div>
+                </div>
+                <!--Item 3-->
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" >
+                        Qual é o temperamento típico de um pug?
+                    </button>
+                </h2>
+                <div id="questionThree" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Os pugs são conhecidos por serem cães afetuosos, enérgicos e sociáveis. Eles geralmente adoram a companhia de seus donos e são bons com crianças e outros animais de estimação. No entanto, também podem ser teimosos em certas situações, o que pode exigir paciência e consistência no treinamento.</div>
+                </div>
+                </div>
+                <!--Item4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" >
+                            Como posso ajudar a evitar problemas de articulações em pugs?
+                        </button>
+                    </h2>
+                    <div id="questionFour" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Os pugs são propensos a problemas nas articulações devido à sua estrutura corporal compacta e ao seu peso. Para ajudar a prevenir esses problemas, é importante controlar a dieta do seu pug para evitar o ganho de peso excessivo, proporcionar exercícios adequados para manter a musculatura e evitar atividades que coloquem pressão excessiva nas articulações, como pular de alturas elevadas.</div>
+                    </div>
+                    </div>
+                    <!--Item5-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" >
+                            Quais são os sinais de alerta de problemas respiratórios em pugs?
+                        </button>
+                    </h2>
+                    <div id="questionFive" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">Alguns sinais de alerta de problemas respiratórios em pugs incluem respiração ruidosa, tosse frequente, esforço ao respirar, falta de ar e intolerância ao exercício. Se você observar algum desses sintomas em seu pug, é importante consultar um veterinário imediatamente para uma avaliação e tratamento adequados. Problemas respiratórios em pugs podem ser sérios e requerem atenção veterinária.</div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Instrutores-->
+    <section id="section4" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Profissionais Especializados em Cuidados com Pugs</h2>
+            <p class="lead text-center text-white mb-5">
+                Conheça nossa equipe de profissionais dedicados a oferecer cuidados especializados para os adoráveis pugs. Desde serviços veterinários até treinamento, nutrição e beleza, estamos aqui para fornecer o suporte necessário para garantir que seu pug viva uma vida saudável e feliz. Confie em nossa experiência e paixão por esta raça única, e descubra como podemos ajudar você e seu pug a desfrutar de uma vida juntos cheia de amor e bem-estar.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-header text-center">
+                            Veterinário Especializado em Pugs
+                          </div>
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-tittle mb-3">Devyd Roberto</h3>
+                            <p class="card-text">
+                                Precisa de cuidados de saúde específicos para o seu pug? Entre em contato com nosso veterinário especializado em pugs.
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark max-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-header text-center">
+                            Nutricionista Animal
+                        </div> 
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/15.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-tittle mb-3">Larissa Freitas</h3>
+                            <p class="card-text">
+                                Obtenha orientações sobre nutrição adequada e dietas balanceadas para o seu pug com nosso nutricionista animal.
+                                
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark max-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-header text-center">
+                            Treinador de Cães
+                        </div> 
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/17.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-tittle mb-3">Filipe Dogtor</h3>
+                            <p class="card-text">
+                                Procurando ajuda com o treinamento do seu pug? Nossos treinadores de cães especializados podem fornecer orientações.
+                                
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark max-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-header text-center">
+                            Especialista em Raças Pequenas
+                        </div> 
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/24.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-tittle mb-3">Jon Moreira</h3>
+                            <p class="card-text">
+                                Mantenha seu pug com uma aparência impecável com a ajuda de nosso groomer especializado em raças pequenas. 
+                                
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark max-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark max-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Contato e Mapa-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4"></h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Endereço:</span>
+                            Hilton Guedes Pereira, 119
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Telefone:</span>
+                            83 996203698
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span>
+                            devyd@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Cep:</span>
+                            58070450
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15837.619168059044!2d-34.8513787!3d-7.07898085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acddba1cefb8df%3A0x6296b6346d1ab903!2sCaribessa!5e0!3m2!1spt-BR!2sbr!4v1715354848705!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <!--Footer-->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyrith &copy; 2024 Pug Comunnity
+            </p> 
+                <a href="" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
+                
+        </div>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+
+</body>
+
+    
+</html>
